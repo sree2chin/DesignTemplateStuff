@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Page Title</title>
+	<style>
+		.sampleContainer {
+			border: solid 1px #0099cc;
+		    padding: 8px;
+		    color: #293d3d;
+		    box-shadow: 0px 2px 14px -4px #003333;
+		}
+/*		.loaderContainer {
+			border: solid 2px #0099cc;
+		    margin: 5px;
+		    width: 52px;
+		    height: 50px;
+		    border-radius: 50%;
+		    transition: 2s;
+		    transition-timing-function: cubic-bezier;
+		    animation-iteration-count: 3;
+		    -webkit-animation-iteration-count: 3;
+		    animation: myrotate 2s;
+		    -webkit-animation: myrotate 2s;
+		}
+		.loaderContainer p {
+			vertical-align: middle;
+		    text-align: center;
+		    color: #0099cc;
+		    font-weight: 800;
+		}*/
+	/*	.loaderContainer:hover {
+			transform: rotateX(180deg);
+		}*/
+		@-webkit-keyframes myrotate {
+			from{transform: rotateX(0deg);}
+			to{transform: rotateX(180deg);}
+		}
+		@keyframes myrotate {
+			from{transform: rotateX(0deg);}
+			to{transform: rotateX(180deg);}
+		}
+
+		.testDiv {
+		    width: 100px;
+		    height: 100px;
+		    /*background: #0099cc;*/
+		    border: solid 2px #0099cc;
+		    position: relative;
+		    border-radius: 50%;
+		    width: 52px;
+		    height: 50px;
+		    -webkit-animation: mymove 2s;  /* Chrome, Safari, Opera */
+		    -webkit-animation-iteration-count: infinite;  /* Chrome, Safari, Opera */
+		    animation: mymove 2s;
+		    animation-iteration-count: infinite;
+		    -webkit-animation-delay: 1s; /* Chrome, Safari, Opera */
+		    animation-delay: 1s;
+		}
+
+		.testDiv p {
+			vertical-align: middle;
+		    text-align: center;
+		    color: #0099cc;
+		    font-weight: 800;
+		}
+
+		@-webkit-keyframes mymove {
+    		from {transform: rotateX(0deg);}
+		    to {transform: rotateX(360deg);}
+		}
+
+		@keyframes mymove {
+		    from {transform: rotateX(0deg);}
+		    to {transform: rotateX(360deg);}
+		}
+	</style>
+	<script>
+		setInterval(function(){ }, 2000);
+	</script>
+	</head>
+	<body>
+		
+		<div class = "sampleContainer">
+			hello
+		</div>
+
+		<div class = "testDiv">
+			<p>
+				S
+			</p>
+		</div>
+
+	</body>
+</html>
